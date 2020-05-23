@@ -1,6 +1,8 @@
 :root{
-    --primary-color: red;
-
+    --primary-color: coral;
+    --secondary-color: #4A00E0;
+    --dark-color: #141E30;
+    --light-color: #b6fbff;
 }
 
 *{
@@ -8,10 +10,56 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Saira Extra Condensed', sans-serif;
     line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.title{
+    text-align: center;
+    padding: 1rem;
+}
+.bottom-line {
+    height: 3px;
+    width: 6rem;
+    background: var(--primary-color);
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.btn{
+  width: fit-content;
+  background: var(--primary-color);
+  padding: .5rem .7rem;
+  border-radius: 3px;
+  color: white;
+  transition: all .2s ease-in-out;
+  margin-top: 10px;
+}
+.btn-light{
+    width: fit-content;
+    background: var(--light-color);
+    padding: .5rem .7rem;
+    border-radius: 3px;
+    color: var(--dark-color);
+    transition: all .2s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    color: var(--light-color);
+    background: var(--dark-color);
+    opacity: .9;
+    padding: 1rem;
 }
 
 .navbar {
@@ -31,7 +79,7 @@ body{
     color: white;
 }
 .brand-title span{
-  color: coral;
+  color: var(--primary-color);
 }
 .felix{
     text-decoration: none;
@@ -60,10 +108,15 @@ body{
     padding: 1rem;
     display: block;
     font-size: 35px;
+    transition: all .3s ease-in-out;
 }
 
 .navbar ul li a:hover {
-    color: skyblue;
+    color: var(--secondary-color);
+
+}
+.current{
+    border-bottom: solid 2px var(--primary-color);
 }
 
 .toggle-button {
@@ -82,6 +135,98 @@ body{
     width: 100%;
     background-color: white;
     border-radius: 10px;
+}
+
+#home{
+    /* position: relative; */
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/backgroundhome.jpg') no-repeat center center/cover;
+    overflow: hidden;
+}
+.container{
+    max-width: 850px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .content-home{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+}
+.container  img{
+border-radius: 50%;
+margin-top: 120px;
+}
+.fa-chevron-down{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all .2s ease-in-out;
+}
+.fas:hover{
+    color: var(--secondary-color);
+    
+}
+
+.image{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/homesuv.jpg') no-repeat center center/cover;
+    padding: 1rem 0;
+    color: white;
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem;
+    grid-gap: 1rem;
+    text-align: center;
+    
+}
+.icons div:nth-child(odd){
+    background-color: var(--light-color);
+}
+
+.inner-text{
+    width: 400px;
+    padding: 2rem;
+    font-size: 15px;
+    
+}
+.form{
+    max-width: 1000px;
+    height: 100vh;
+    margin: auto;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-color);
+    padding: 10px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    line-height: 1.8;
+}
+input{
+    border-radius: 3px;
+    line-height: 2;
 }
 
 @media(max-width: 600px){
@@ -121,3 +266,4 @@ body{
         display: none;
     }
 }
+
