@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +10,47 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Reservations</title>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div><a class="felix" href="index.html">
-                <h3 class="brand-title">Felix <span>Luxury Limo</span></h3>
-            </a></div>
-            <a href="tel:973-896-9924">Cell: (973) 896-9924</a>
-            <a
-                    href="mailto:fernandezfelix460@gmail.com? subject=subject text">fernandezfelix460@gmail.com</a>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#reservations">Reservations</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- <h1>Reservation Form</h1>
-    <form>
+    <section class="page-header">
+
+        <header>
+            <nav class="navbar">
+                <div><a class="felix" href="index.html">
+                        <h3 class="brand-title">Felix <span>Luxury Limo</span></h3>
+                    </a></div>
+                    <a href="tel:973-896-9924">Cell: (973) 896-9924</a>
+                    <a
+                            href="mailto:fernandezfelix460@gmail.com? subject=subject text">fernandezfelix460@gmail.com</a>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="reservations.html" class="current">Reservations</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+                <div class="page-title">
+                    <h1>Reservation Form</h1>
+                   
+                </div>
+                
+        </header>
+        
+    </section>
+   <div class="form-container" >
+       <div>
+    <form >
         <ul>
             <li>
-                <select name="" id="">
+                <label for="services">Select Service Type</label>
+                <select name="sercives" id="">
                     <option value="to-airport">To Airport</option>
                     <option value="from-airport">From Airport</option>
                     <option value="point-to-point">Point to Point</option>
@@ -42,21 +58,51 @@
                     <option value="wedding">Wedding</option>
                 </select>
             </li>
+            <li>
+                <label for="date">Select a Date</label>
+                <input type="date" name="" id="">
+            </li>
+            <li>
+                <label for="time">Select a Time</label>
+                <input type="time" name="" id="">
+            </li>
+            <li>
+                <label for="pick-up">Pick-Up Location</label>
+                <input type="address" name="" id="">
+            </li>
+            <li>
+                <label for="drop-off">Drop-Off Location</label>
+                <input type="address" name="" id="">
+            </li>
+            <li>
+                <label for="Passagers">Number of Passagers</label>
+                <i class="fas fa-user-minus" style="padding: 5px;"></i><input type="number" name="passagers" id="passagers" placeholder="1"><i class="fas fa-user-plus" style="padding: 5px;"></i>
+            </li>
+            <li>
+                <label for="Luggage">Luggage Count</label>
+                <i class="fas fa-suitcase-rolling"></i><i class="fas fa-minus"></i><input type="number" name="luggage" id="luggage"><i class="fas fa-plus"></i>
+            </li>
         </ul>
-    </form> -->
-    
+    </form>
+</div>
+    <div>
+    <img src="images/booking.jpg" alt="booking">
+</div>
+</div>
+
+
     <footer id="main-footer">
         <div class="footer-content">
             <div>
                 <h1>Logo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad odio quibusdam 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad odio quibusdam
                     unde, architecto quasi porro incidunt voluptas beatae nesciunt!</p>
             </div>
-          
+
             <div>
                 <h3>Site Links</h3>
                 <ul class="list">
-                    
+
                     <li><a href="form.html">Sign Up</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="reservations.html">Reservations</a></li>
@@ -67,15 +113,16 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <a href="form.html" class="btn">Join Now</a>
             </div>
-            
+
         </div>
-        <a href="#home"><i class="fas fa-chevron-up fa-2x"><p><small>Top</small></p></i></a>
+     
         <div class="copyright">
-            
+
             <p>
                 Copyright &copy; 2020, All Rights Reserved
             </p>
         </div>
     </footer>
 </body>
+
 </html>
