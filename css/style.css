@@ -277,6 +277,10 @@ form{
     padding: 15px;
     
 }
+form select{
+    height: 30px;
+    border-radius: 3px;
+}
 form ul{
     list-style: none;
    
@@ -303,6 +307,19 @@ form input{
 .about-container .about-img{
     width: 100%;
 }
+
+.service-container{
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
 
 #main-footer{
     background: var(--dark-color);
