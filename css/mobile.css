@@ -1,0 +1,102 @@
+/* Mobile Responsiveness */
+
+/* Navbar and Toggle Button */
+
+@media(max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+@media(max-width: 600px) {
+    .navbar a.active{
+        display: none;
+    }
+}
+
+@media(min-width: 600px) {
+    .toggle-button{
+        display: none;
+    }
+}
+
+/* Home Page */
+@media(max-width: 600px){
+    .container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+    }
+
+    .container .content-home{
+     padding: 4rem;
+     text-align: center;
+    }
+    .container .home-image{
+        display: none;
+    }
+   #jumbotron{
+       display: flex;
+       flex-direction: column;
+   }
+   .icons{
+    display: block;
+   }
+}
+
+/* Reservations */
+
+@media(max-width: 600px){
+    .form-container{
+        display: block;
+    }
+    .form-container img{
+        height: 250px;
+        margin-bottom: 5px;
+    }
+    form select{
+        width: 300px;
+    }
+}
+
+/* Services */
+
+@media(max-width: 600px){
+    .service-container{
+        display: block;
+    }
+    .service:active::after{
+        transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+    }
+    .service-image:active{
+        transform: scale(1.2);
+    }
+    .service-text:active{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
