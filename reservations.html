@@ -47,11 +47,11 @@
     </section>
    <div class="form-container" >
        <div>
-    <form >
+    <form name="contact" method="POST" data-netlify="true">
         <ul>
             <li>
                 <label for="services">Select Service Type</label>
-                <select name="sercives" id="">
+                <select name="service[]" multiple id="service">
                     <option value="to-airport">To Airport</option>
                     <option value="from-airport">From Airport</option>
                     <option value="point-to-point">Point to Point</option>
@@ -61,19 +61,19 @@
             </li>
             <li>
                 <label for="date">Select a Date</label>
-                <input type="date" name="" id="">
+                <input type="date" name="date" id="date">
             </li>
             <li>
                 <label for="time">Select a Time</label>
-                <input type="time" name="" id="">
+                <input type="time" name="time" id="time">
             </li>
             <li>
                 <label for="pick-up">Pick-Up Location</label>
-                <input type="address" name="" id="">
+                <input type="address" name="pickup" id="pickup">
             </li>
             <li>
                 <label for="drop-off">Drop-Off Location</label>
-                <input type="address" name="" id="">
+                <input type="address" name="dropoff" id="dropoff">
             </li>
             
             <li>
