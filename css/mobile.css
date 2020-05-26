@@ -99,4 +99,12 @@
     }
 }
 
+/* Footer */
+
+@media(max-width: 600px){
+    .footer-content{
+        display: block;
+    }
+}
+
 
